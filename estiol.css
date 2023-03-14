@@ -60,21 +60,66 @@
 
     }
     #foto1{
-        height: 100%;
-        width: 50%;
+        height: 70%;
+        width: 34.5%;
         background-color: lawngreen;
         margin: 10px;
         float: right;
         border-top-left-radius: 50mm;
         border-bottom-left-radius: 50mm;
         position: absolute;
-        top: 0%;
-        left: 50%;
-   
-    
-    
-
-  
-
-    
+        top: 15%;
+        left: 65%;  
 }
+
+#foto2{
+    height: 50%;
+    width: 35%;
+    background-color: rgb(177, 26, 26);
+    margin: 10px;
+    float: left;
+    border-top-right-radius: 20mm;
+    border-bottom-right-radius:20mm ;
+    position: absolute;
+    top: 49%;
+    left: .4%;  
+}
+
+.img-plato{   
+    height: 100%;
+    width: 100%;
+    float: left;
+    margin:auto;
+    top: 25%;
+    left: 25%;
+    border-top-right-radius: 20mm;
+    border-bottom-right-radius:20mm ;
+ }
+
+
+
+#texto1{
+    font-family: sans-serif;
+    font-size: 10 px;
+    color: rgb(82, 195, 12);
+    line-height: 5mm;
+    position: absolute;
+    float: left;
+    top: 10%;
+    left: 5%;  
+   
+
+}
+#texto2{
+    font-family: sans-serif;
+    font-size: 10 px;
+    color: rgb(22, 22, 190);
+    line-height: 5mm;
+    position: absolute;
+    float: left;
+    top: 20%;
+    left: 5%;  
+
+}
+
+
