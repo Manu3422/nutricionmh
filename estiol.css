@@ -33,7 +33,12 @@
 }
 
 
-.btn {
+ 
+.btn, .btn-chico, .btn-mediano, .btn-grande, .btn:link, .btn:visited {
+    color: rgb(26, 87, 230); 
+    background-color: #ffd700;}
+
+    .btn {
     margin-right: 1px;
     margin-left: 10px;
     background-color: #ffd700;
@@ -45,22 +50,20 @@
     border-radius: 10mm;
     margin: 5mm;
     padding: 2mm;
-}
- 
-.btn, .btn-chico, .btn-mediano, .btn-grande, .btn:link, .btn:visited {
-    color: rgb(26, 87, 230); 
-    background-color: #ffd700;}
-
+    }
     .btn-chico {
-        font-size: 1rem;
-        display: inline-block;
-        width: calc(50% - 20px);
-        padding: 5px;
-        margin: px;
-        background-color: #5d6bea!important;
-        border-radius: 5px;    
-        font-family: 'Source Sans Pro', sans-serif;
-        padding: 6px 18px;
+        margin-right: 1px;
+        margin-left: 10px;
+        background-color: #ffd700;
+        background-size: 1000px;
+        color: rgb(26, 87, 230);
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 10px;
+        border-radius: 10mm;
+        margin: 5mm;
+        padding: 2mm;
+   
     }
      
     .btn-mediano {
@@ -144,10 +147,9 @@
     font-family: sans-serif;
     font-size: 2.2vw ;
     color: rgb(82, 195, 12);
-    line-height:;
     position: absolute;
     float: left;
-    top: 25%;
+    top: 20%;
     left: 5%;  
    
 
@@ -156,7 +158,6 @@
     font-family: sans-serif;
     font-size: 1.5vw;
     color: rgb(22, 22, 190);
-    line-height: ;
     position: absolute;
     float: left;
     top: 38%;
