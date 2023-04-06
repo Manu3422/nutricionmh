@@ -36,7 +36,7 @@
 .btn {
     margin-right: 1px;
     margin-left: 10px;
-    background-color: gold;
+    background-color: #ffd700;
     background-size: 1000px;
     color: rgb(26, 87, 230);
     font-family: sans-serif;
@@ -46,7 +46,49 @@
     margin: 5mm;
     padding: 2mm;
 }
-    
+ 
+.btn, .btn-chico, .btn-mediano, .btn-grande, .btn:link, .btn:visited {
+    color: rgb(26, 87, 230); 
+    background-color: #ffd700;}
+
+    .btn-chico {
+        font-size: 1rem;
+        display: inline-block;
+        width: calc(50% - 20px);
+        padding: 10px;
+        margin: 10px;
+        background-color: #5d6bea!important;
+        border-radius: 5px;    
+        font-family: 'Source Sans Pro', sans-serif;
+        padding: 6px 18px;
+    }
+     
+    .btn-mediano {
+        font-size: 1rem;
+        display: inline-block;
+        width: calc(50% - 20px);
+        padding: 10px;
+        margin: 10px;
+        background-color: #79dd74!important;
+        border-radius: 5px;    
+        font-family: 'Source Sans Pro', sans-serif;
+        padding: 6px 18px;
+    } 
+     
+    .btn-grande {
+        font-size: 1rem;
+        display: inline-block;
+        width: calc(50% - 20px);
+        padding: 10px;
+        margin: 10px;
+        background-color: #525251!important;
+        border-radius: 5px;    
+        font-family: 'Source Sans Pro', sans-serif;
+        padding: 6px 18px;
+    }
+
+
+
 .img-nut {
 
     height: 100%;
