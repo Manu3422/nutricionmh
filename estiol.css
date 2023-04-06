@@ -55,8 +55,8 @@
         font-size: 1rem;
         display: inline-block;
         width: calc(50% - 20px);
-        padding: 10px;
-        margin: 10px;
+        padding: 5px;
+        margin: px;
         background-color: #5d6bea!important;
         border-radius: 5px;    
         font-family: 'Source Sans Pro', sans-serif;
@@ -142,24 +142,24 @@
 
 #texto1{
     font-family: sans-serif;
-    font-size: 10 px;
+    font-size: 2.2vw ;
     color: rgb(82, 195, 12);
-    line-height: 5mm;
+    line-height:;
     position: absolute;
     float: left;
-    top: 10%;
+    top: 25%;
     left: 5%;  
    
 
 }
 #texto2{
     font-family: sans-serif;
-    font-size: 10 px;
+    font-size: 1.5vw;
     color: rgb(22, 22, 190);
-    line-height: 5mm;
+    line-height: ;
     position: absolute;
     float: left;
-    top: 20%;
+    top: 38%;
     left: 5%;  
 
 }
