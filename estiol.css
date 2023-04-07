@@ -4,14 +4,8 @@
     border-width: 0;
     background-color: rgba(255, 255, 255, 0.864);
 }
-#logo {
-    background-color:rgba(255, 255, 255, 0.864);
-    margin:0px;
-    padding: 10px;
-    width: 1300px;
-    height:20px;
-   
-}
+
+
 
 #general {
     margin: 0px;
@@ -20,19 +14,45 @@
     height: 800px;
     background-color: rgb(255, 234, 0);
    
-
-
 }
-
 .img-log{
-    height: 500%;
-    width: 10%;
-    display: block;
-    display:block;
+ 
+    height: 100%;
+    width: 100%;
+    float: right;
     margin:auto;
+    top: 25%;
+    left: 25%;
 }
+#logo{
+
+    height: 9%;
+    width: 8%;
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    float: right;
+    position: absolute;
+    top: 0%;
+    left: 50%;  
+   
+} 
 
 
+#botones { 
+height: 5%;
+width: 40%;
+background-color: rgb(255, 255, 255);
+margin: 0px;
+float: right;
+position: absolute;
+top: 5%;
+left: 3%;  
+border-top-left-radius: 10mm;
+border-bottom-left-radius: 10mm;
+border-top-right-radius: 10mm;
+border-bottom-right-radius: 10mm;
+
+}
  
 .btn, .btn-chico, .btn-mediano, .btn-grande, .btn:link, .btn:visited {
     color: rgb(26, 87, 230); 
@@ -40,16 +60,16 @@
 
     .btn {
     margin-right: 1px;
-    margin-left: 10px;
+    margin-left: 8px;
     background-color: #ffd700;
     background-size: 1000px;
     color: rgb(26, 87, 230);
     font-family: sans-serif;
     font-weight: bold;
-    font-size: 1.2vw;
+    font-size: 1vw;
     border-radius: 10mm;
-    margin: 5mm;
-    padding: 2mm;
+    margin: 2mm;
+    padding: 1mm;
     }
     .btn-chico {
         margin-right: 1px;
@@ -107,8 +127,10 @@
     left: 25%;
     border-top-left-radius: 50mm;
     border-bottom-left-radius: 50mm;
+}
 
-    }
+    
+    
     #foto1{
         height: 70%;
         width: 34.5%;
@@ -169,5 +191,8 @@
     left: 5%;  
 
 }
+
+
+
 
 
