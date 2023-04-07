@@ -11,7 +11,7 @@
     margin: 0px;
     padding: 1mm;
     width: 2mm;
-    height: 800px;
+    height: 400px;
     background-color: rgb(255, 234, 0);
    
 }
@@ -40,13 +40,13 @@
 
 #botones { 
 height: 5%;
-width: 40%;
+width: 46%;
 background-color: rgb(255, 255, 255);
 margin: 0px;
 float: right;
 position: absolute;
 top: 5%;
-left: 3%;  
+left: 3.6%;  
 border-top-left-radius: 10mm;
 border-bottom-left-radius: 10mm;
 border-top-right-radius: 10mm;
@@ -172,27 +172,42 @@ border-bottom-right-radius: 10mm;
 
 #texto1{
     font-family: sans-serif;
-    font-size: 2.2vw ;
+    font-size: 30px;
     color: rgb(82, 195, 12);
     position: absolute;
     float: left;
-    top: 23%;
-    left: 5%;  
+    top: 13%;
+    left: 30px;  
+ 
+        
+    }
+    
    
 
-}
 #texto2{
     font-family: sans-serif;
-    font-size: 1.5vw;
+    font-size: 50%;
     color: rgb(22, 22, 190);
     position: absolute;
     float: left;
-    top: 35%;
-    left: 5%;  
-
+    top: 25%;
+    left: 30px;  
 }
 
 
+
+    h4{
+    @media screen and {max-width: 350px}
+    font-size: 2vw;
+    }
+
+    
+    h5{
+        font-size: 2vw;
+        @media screen and {max-width: 350px}
+        font-size: 1.8vw;
+      
+        }
 
 
 
