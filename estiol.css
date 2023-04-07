@@ -5,14 +5,26 @@
     background-color: rgba(255, 255, 255, 0.864);
 }
 
+body {
+    margin: 0px;
+    padding: 0px;
+    border-width: 0;
+    background-color: rgba(255, 255, 255, 0.864);
+
+}
+
+
 
 
 #general {
     margin: 0px;
     padding: 1mm;
     width: 2mm;
-    height: 400px;
+    height: 700px;
     background-color: rgb(255, 234, 0);
+
+
+
    
 }
 .img-log{
@@ -40,12 +52,12 @@
 
 #botones { 
 height: 5%;
-width: 46%;
+width: 40%;
 background-color: rgb(255, 255, 255);
 margin: 0px;
 float: right;
 position: absolute;
-top: 5%;
+top: 3%;
 left: 3.6%;  
 border-top-left-radius: 10mm;
 border-bottom-left-radius: 10mm;
@@ -54,9 +66,8 @@ border-bottom-right-radius: 10mm;
 
 }
  
-.btn, .btn-chico, .btn-mediano, .btn-grande, .btn:link, .btn:visited {
-    color: rgb(26, 87, 230); 
-    background-color: #ffd700;}
+.btn, .btn-chico, .btn-mediano, .btn-grande, .btn:link, .btn:visited 
+    
 
     .btn {
     margin-right: 1px;
@@ -74,7 +85,7 @@ border-bottom-right-radius: 10mm;
     .btn-chico {
         margin-right: 1px;
         margin-left: 10px;
-        background-color: #ffd700;
+        background-color: #0d0d0d;
         background-size: 1000px;
         color: rgb(26, 87, 230);
         font-family: sans-serif;
@@ -104,9 +115,9 @@ border-bottom-right-radius: 10mm;
     .btn-grande {
         margin-right: 1px;
         margin-left: 10px;
-        background-color: #ffd700;
+        background-color: #e14424;
         background-size: 1000px;
-        color: rgb(26, 87, 230);
+        color: rgb(21, 21, 22);
         font-family: sans-serif;
         font-weight: bold;
         font-size: 2vw;
@@ -176,23 +187,13 @@ border-bottom-right-radius: 10mm;
     color: rgb(82, 195, 12);
     position: absolute;
     float: left;
-    top: 13%;
+    top: 12%;
     left: 30px;  
  
         
     }
     
    
-
-#texto2{
-    font-family: sans-serif;
-    font-size: 50%;
-    color: rgb(22, 22, 190);
-    position: absolute;
-    float: left;
-    top: 25%;
-    left: 30px;  
-}
 
 
 
@@ -206,6 +207,7 @@ border-bottom-right-radius: 10mm;
         font-size: 2vw;
         @media screen and {max-width: 350px}
         font-size: 1.8vw;
+        color: rgb(22, 22, 190);
       
         }
 
