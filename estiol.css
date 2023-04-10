@@ -301,7 +301,7 @@ html {
       "navbar"  100px   /*Menu*/
       "main"    100px  /*Cuerpo*/
       "sidebar" 100px /*Barra Lateral*/
-      "footer"  103px; /*Pie*/
+      "footer"  100px; /*Pie*/
   }
   
   /*Visualizacion menor a 600px tamaño del dispositivo movil, se utilizará media query*/
@@ -323,21 +323,21 @@ html {
   @media (min-width: 300px) {
     .Cuerpo{
     float:right;
-    top: 22%;
+    top: 25%;
     left: 8%;}
   }
   
   @media (min-width: 200px) {
     .Cuerpo{
     float:right;
-    top: 22%;
+    top: 27%;
     left: 8%;}
   }
   
   @media (min-width: 100px) {
     .Cuerpo{
     float:right;
-    top: 22%;
+    top: 27%;
     left: 8%;}
   }
 
@@ -352,7 +352,7 @@ html {
         
       grid-template:
         "header  header header"  100px /*Encabezado*/
-        "main   sidebar" 700px  /*Menu*/
+        "main   sidebar" 800px  /*Menu*/
         "footer  footer footer"  100px / 200px    auto   200px; /*Pie*/
       }
     }
@@ -365,7 +365,7 @@ html {
           .Cuerpo {
             left: 37%;
             float:right;
-            top: 50%;
+            top: 60%;
           }
         }
 
@@ -377,6 +377,6 @@ html {
           .Cuerpo {
             left: 37%;
             float:right;
-            top: 50%;
+            top: 60%;
           }
         }
