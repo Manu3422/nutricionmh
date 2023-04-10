@@ -301,7 +301,7 @@ html {
       "navbar"  100px   /*Menu*/
       "main"    100px  /*Cuerpo*/
       "sidebar" 100px /*Barra Lateral*/
-      "footer"  100px; /*Pie*/
+      "footer"  103px; /*Pie*/
   }
   
   /*Visualizacion menor a 600px tamaño del dispositivo movil, se utilizará media query*/
@@ -340,6 +340,7 @@ html {
     top: 22%;
     left: 8%;}
   }
+
   
   
   
