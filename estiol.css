@@ -10,7 +10,7 @@ body {
     padding: 0px;
     border-width: 0;
     background-color: rgba(255, 255, 255, 0.864);
-    height: 660px;
+    height: 100%;
     position: relative;
 
 }
@@ -18,20 +18,24 @@ body {
 
 
 
-#general {
-    margin: 0px;
-    padding: 1mm;
-    width: 2mm;
+.linea {
+    margin: 0%;
+    padding: 0%;
+    width: 5%;
     height: 100%;
-    background-color: rgb(255, 234, 0);
-    position: relative;
+    background-color:  #ffd700;
+    position: absolute;
+    float: right;
+    margin:auto;
+    top: 0%;
+    right:98.6%;
 
 
 
    
 }
 .img-log{
- 
+    grid-area: header;
     height: 100%;
     width: 100%;
     float: right;
@@ -39,29 +43,32 @@ body {
     top: 25%;
     left: 25%;
 }
-#logo{
-
-    height: 9%;
-    width: 8%;
+.Encabezado{
+    grid-area: header;
+    height: 50%;
+    width: 11%;
     background-color: rgb(255, 255, 255);
-    margin: 0px;
+    margin: 5px;
     float: right;
     position: absolute;
     top: 0%;
     left: 50%;  
+    top: 3%;
+    right: 50%;  
    
 } 
 
 
-#botones { 
+.botones { 
+grid-area: header;
 height: 5%;
-width: 40%;
+width: 48%;
 background-color: rgb(255, 255, 255);
 margin: 0px;
 float: right;
 position: absolute;
 top: 3%;
-left: 3.6%;  
+right: 50%;  
 border-top-left-radius: 10mm;
 border-bottom-left-radius: 10mm;
 border-top-right-radius: 10mm;
@@ -73,7 +80,7 @@ border-bottom-right-radius: 10mm;
     
 
     .btn {
-    margin-right: 1px;
+    margin-right: 8px;
     margin-left: 8px;
     background-color: #ffd700;
     background-size: 1000px;
@@ -99,7 +106,7 @@ border-bottom-right-radius: 10mm;
         padding: 2mm;
    
     }
-     
+
     .btn-mediano {
         margin-right: 1px;
         margin-left: 10px;
@@ -129,38 +136,35 @@ border-bottom-right-radius: 10mm;
         padding: 2mm;
     }
 
+    .img-nut {
+        grid-area: header;
+        height: 100%;
+        width: 100%;
+      float: right;
+        margin:auto;
+        top: 25%;
+        left: 25%;
+        border-top-left-radius: 30mm;
+        border-bottom-left-radius: 30mm;
 
-
-.img-nut {
-
-    height: 100%;
-    width: 100%;
-  float: right;
-    margin:auto;
-    top: 25%;
-    left: 25%;
-    border-top-left-radius: 50mm;
-    border-bottom-left-radius: 50mm;
-}
-
-    
+    }
     
     #foto1{
         height: 70%;
-        width: 34.5%;
+        width: 29%;
         background-color: lawngreen;
         margin: 10px;
         float: right;
-        border-top-left-radius: 50mm;
-        border-bottom-left-radius: 50mm;
+        border-top-left-radius: 30mm;
+        border-bottom-left-radius: 30mm;
         position: absolute;
         top: 15%;
-        left: 65%;  
+        left: 70%;  
 }
 
 #foto2{
     height: 50%;
-    width: 35%;
+    width: 33%;
     background-color: rgb(177, 26, 26);
     margin: 10px;
     float: left;
@@ -184,7 +188,7 @@ border-bottom-right-radius: 10mm;
 
 
 
-#texto1{
+.texto1{
     font-family: sans-serif;
     font-size: 30px;
     color: rgb(82, 195, 12);
@@ -198,15 +202,16 @@ border-bottom-right-radius: 10mm;
     
 
     h4{
-    @media screen and {max-width: 350px}
+    @media screen and {max-width: 500px}
     font-size: 2vw;
     }
 
     h5{
         font-size: 2vw;
-        @media screen and {max-width: 350px}
-        font-size: 1.8vw;
-        color: rgb(22, 22, 190);   
+        @media screen and {max-width: 500px}
+        font-size: 1.6vw;
+        color: rgb(22, 22, 190); 
+        text-align:justify  
         }
 
 .pie{
@@ -273,3 +278,51 @@ html {
     width: 50%;
     background-color: rgb(255, 234, 0);
 }
+
+.Cuerpo {
+    grid-area: main;
+    background-color: #201313;
+    font-family: sans-serif;
+    font-size: 30px;
+    position: absolute;
+    float: left;
+    top: 50%;
+    left: 27%;
+  
+
+  }
+
+
+.Contenedor {
+    display: grid;
+    gap: auto;
+    /*Estructura para definir columnas como se visualizara en plantilla html*/
+      grid-template:
+      "header"  100px /*Encabezado*/
+      "navbar"  60px  /*Menu*/
+      "main"    100px  /*Cuerpo*/
+      "sidebar" 100px /*Barra Lateral*/
+      "footer"  100px; /*Pie*/
+  }
+  
+  /*Visualizacion menor a 600px tamaño del dispositivo movil, se utilizará media query*/
+  @media (min-width: 400px) {
+    .Contenedor {
+     
+      grid-template:
+        "header  header" 100% /*Encabezado*/
+        "navbar  navbar" 50%  /*Menu*/
+        "sidebar main"   40px  /*Cuerpo*/
+        "footer  footer footer" 100px /200px    auto;  /*Pie*/
+    }
+  }
+  
+  /*Visualizacion mayor 900px tamaño del monitor de un equipo de computo, se utilizará media query*/
+  @media (min-width: 900px) {
+    .Contenedor {
+      grid-template:
+        "header  header header"  100px /*Encabezado*/
+        "navbar  main   sidebar" auto  /*Menu*/
+        "footer  footer footer"  100px / 200px    auto   200px; /*Pie*/
+      }
+    }
