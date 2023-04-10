@@ -10,6 +10,8 @@ body {
     padding: 0px;
     border-width: 0;
     background-color: rgba(255, 255, 255, 0.864);
+    height: 800px;
+    position: relative;
 
 }
 
@@ -20,8 +22,9 @@ body {
     margin: 0px;
     padding: 1mm;
     width: 2mm;
-    height: 700px;
+    height: 100%;
     background-color: rgb(255, 234, 0);
+    position: relative;
 
 
 
@@ -193,23 +196,80 @@ border-bottom-right-radius: 10mm;
         
     }
     
-   
-
-
 
     h4{
     @media screen and {max-width: 350px}
     font-size: 2vw;
     }
 
-    
     h5{
         font-size: 2vw;
         @media screen and {max-width: 350px}
         font-size: 1.8vw;
-        color: rgb(22, 22, 190);
-      
+        color: rgb(22, 22, 190);   
         }
 
+.pie{
+   
+    background-color:  rgb(255, 234, 0);
+    height: 5%;
+    width: 100%;
+    margin: 0px;
+    float: left;
+    position: absolute;
+    top: 98%;
+      
+}
 
+html {
+    height: 100%;
+}
 
+#wa{
+    height: 100%;
+    width: 4%;
+    background-color: rgb(255, 234, 0);
+    margin: 0px;
+    float: right;
+    position: absolute;
+    top: 0%;
+    left: 4%;
+}
+.img-wa{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 234, 0);
+}
+
+#face{
+    height: 100%;
+    width: 4%;
+    background-color: rgb(255, 234, 0);
+    margin: 0px;
+    float: right;
+    position: absolute;
+    top: 0%;
+    left: 9%;
+}
+.img-face{
+    height: 50%;
+    width: 50%;
+    background-color: rgb(255, 234, 0);
+}
+
+#insta{
+    height: 100%;
+    width: 4%;
+    background-color:rgb(255, 234, 0);
+    margin: 0px;
+    float: right;
+    position: absolute;
+    top: 0%;
+    left: 14%;
+}
+
+.img-insta{
+    height: 50%;
+    width: 50%;
+    background-color: rgb(255, 234, 0);
+}
