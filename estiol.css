@@ -280,49 +280,102 @@ html {
 }
 
 .Cuerpo {
-    grid-area: main;
+   
     background-color: #201313;
     font-family: sans-serif;
     font-size: 30px;
     position: absolute;
-    float: left;
+    float:right;
     top: 50%;
-    left: 27%;
+    left: 29%;
   
 
   }
-
-
 .Contenedor {
     display: grid;
-    gap: auto;
+    gap: 100px;
+   
     /*Estructura para definir columnas como se visualizara en plantilla html*/
       grid-template:
       "header"  100px /*Encabezado*/
-      "navbar"  60px  /*Menu*/
+      "navbar"  100px   /*Menu*/
       "main"    100px  /*Cuerpo*/
       "sidebar" 100px /*Barra Lateral*/
       "footer"  100px; /*Pie*/
   }
   
   /*Visualizacion menor a 600px tamaño del dispositivo movil, se utilizará media query*/
+
+  @media (min-width: 1200px) {
+    .Cuerpo{
+    float:right;
+    top: 70%;
+    left: 6%;}
+  }
+      
+  
   @media (min-width: 400px) {
-    .Contenedor {
-     
-      grid-template:
-        "header  header" 100% /*Encabezado*/
-        "navbar  navbar" 50%  /*Menu*/
-        "sidebar main"   40px  /*Cuerpo*/
-        "footer  footer footer" 100px /200px    auto;  /*Pie*/
-    }
+    .Cuerpo{
+    float:right;
+    top: 25%;
+    left: 8%;}
+  }
+  @media (min-width: 300px) {
+    .Cuerpo{
+    float:right;
+    top: 22%;
+    left: 8%;}
   }
   
+  @media (min-width: 200px) {
+    .Cuerpo{
+    float:right;
+    top: 22%;
+    left: 8%;}
+  }
+  
+  @media (min-width: 100px) {
+    .Cuerpo{
+    float:right;
+    top: 22%;
+    left: 8%;}
+  }
+  
+  
+  
   /*Visualizacion mayor 900px tamaño del monitor de un equipo de computo, se utilizará media query*/
-  @media (min-width: 900px) {
+  @media (min-width: 700px) {
     .Contenedor {
+        display: grid;
+    gap: 7.0%;
+        
       grid-template:
         "header  header header"  100px /*Encabezado*/
-        "navbar  main   sidebar" auto  /*Menu*/
+        "main   sidebar" 700px  /*Menu*/
         "footer  footer footer"  100px / 200px    auto   200px; /*Pie*/
       }
     }
+
+    @media (min-width: 600px) {
+        .Contenedor {
+            display: grid;
+        gap: 5.0%;    
+          }
+          .Cuerpo {
+            left: 37%;
+            float:right;
+            top: 50%;
+          }
+        }
+
+    @media (min-width: 400px) {
+        .Contenedor {
+            display: grid;
+        gap: 5.0%;    
+          }
+          .Cuerpo {
+            left: 37%;
+            float:right;
+            top: 50%;
+          }
+        }
