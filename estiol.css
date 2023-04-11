@@ -10,7 +10,7 @@ body {
     background-color: rgba(255, 255, 255, 0.864);
     height: 100%;
     position: relative;
-    padding-bottom: 4em;
+    padding-bottom: 6em;
     min-height: 100vh;
 
 }
@@ -199,14 +199,10 @@ border-bottom-right-radius: 10mm;
     
 
     h4{
-    @media screen and {max-width: 500px}
     font-size: 2vw;
     }
 
     h5{
-        font-size: 2vw;
-        @media screen and {max-width: 500px}
-        font-size: 10px;
         color: rgb(22, 22, 190); 
         text-align:justify  
         }
@@ -468,11 +464,11 @@ h5{
 
               }
               h5{
-                font-size: 14px;
+                font-size: 1.7vw;
                 
               }
               h4 {
-                font-size: 15px;
+                font-size: 1.9vw;
             
               }
             }
