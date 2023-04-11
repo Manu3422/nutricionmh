@@ -165,7 +165,7 @@ border-bottom-right-radius: 10mm;
 #foto2{
     height: 50%;
     width: 33%;
-    background-color: rgb(177, 26, 26);
+    background-color: rgb(255, 255, 255);
     margin: 10px;
     float: left;
     border-top-right-radius: 20mm;
@@ -193,15 +193,15 @@ border-bottom-right-radius: 10mm;
 
 .texto1{
     font-family: sans-serif;
-    font-size: 30px;
+    font-size: 10px;
     color: rgb(82, 195, 12);
     position: absolute;
     float: left;
-    top: 12%;
-    left: 30px;  
-    height: 25.5%;
+    top: 17%;
+    left: 28px;  
+    height: 2.5%;
     width: 33%;
-    background-color: #e14424;
+    background-color: #ffffff;
  
         
     }
@@ -287,12 +287,12 @@ html {
 
 .Cuerpo {
    
-    background-color: #d91818;
+    background-color: #ffffff;
     font-family: sans-serif;
     font-size: 30px;
     position: absolute;
     float:right;
-    left: 30%;
+    left: 27%;
     top: 12%;
     height: 15.9%;
     width: 32%;
@@ -301,70 +301,33 @@ html {
   }
 .Contenedor {
     display: grid;
-    gap: 1200px;
+    gap: 1700px;
    
     /*Estructura para definir columnas como se visualizara en plantilla html*/
       grid-template:
       "header"  100px /*Encabezado*/
       "navbar"  100px   /*Menu*/
-      "main"    100px  /*Cuerpo*/
+      "main"    1700px  /*Cuerpo*/
       "sidebar" 100px /*Barra Lateral*/
       "footer"  100px; /*Pie*/
   }
   
-  /*Visualizacion menor a 600px tamaño del dispositivo movil, se utilizará media query*/
-
-  @media (min-width: 1500px) {
-    .Cuerpo{
-    float:right;
-    top: 7%;
-    left: 1%;}
-  }
-  
-@media(min-width: 400px) {
-    .Cuerpo{
-    float:right;
-    top: 25%;
-    left: 5%;
-    width: 34%;
-}
-}
-h5{
-  font-size: 1px;
-}
-  
-  
-  @media (min-width: 200px) {
-    .Cuerpo{
-    float:right;
-    top: 27%;
-    left: 6%;}
-  }
-  
-  @media (min-width: 100px) {
-    .Cuerpo{
-    float:right;
-    top: 27%;
-    left: 6%;
-    width: 33%;
-    }
-  }
-
-  
-  
-  
-  /*Visualizacion mayor 900px tamaño del monitor de un equipo de computo, se utilizará media query*/
-  @media (min-width: 700px) {
+  @media (min-width: 1700px) {
     .Contenedor {
         display: grid;
-    gap: 7.0%;
-        
-      grid-template:
-        "header  header header"  100px /*Encabezado*/
-        "main   sidebar" 800px  /*Menu*/
-        "footer  footer footer"  100px / 200px    auto   200px; /*Pie*/
-      }
-    }
+    gap: 8%;
+}
+.Cuerpo {
+  left: 39%;
+  float:right;
+  top: 60%;
+}
+h5{
+  font-size: 19px;
+
+}
+
+}
     
     @media (min-width: 800px) {
         .Contenedor {
@@ -374,7 +337,7 @@ h5{
           .Cuerpo {
             left: 39%;
             float:right;
-            top: 60%;
+            top: 57%;
           }
           h5{
             font-size: 17px;
@@ -389,7 +352,7 @@ h5{
         gap: 100%;    
           }
           .Cuerpo {
-            left: 38%;
+            left: 37%;
             float:right;
             top: 47%;
           }
@@ -403,12 +366,19 @@ h5{
             gap: 100%;    
               }
               .Cuerpo {
-                left: 38%;
+                left: 39%;
                 float:right;
                 top: 47%;
+                width: 31%;
+
               }
               h5{
-                font-size: 12px;
+                font-size: 14px;
+                
+              }
+              h4 {
+                font-size: 15px;
+            
               }
             }
     
