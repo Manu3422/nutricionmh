@@ -28,7 +28,7 @@
         <button id="Boton3" class="btn3" >UBICACION</button></form>
 
         
-        <form method="post" action="contacto.html" class="botones">
+        <form method="post" action="contacto.md" class="botones">
         <button id="Boton4" class="btn4" >CONTACTO</button></form>
       
     </nav>
