@@ -7,11 +7,11 @@
 
 body {
     margin: 0px;
-    padding: 0px;
-    border-width: 0;
     background-color: rgba(255, 255, 255, 0.864);
     height: 100%;
     position: relative;
+    padding-bottom: 4em;
+    min-height: 100vh;
 
 }
 
@@ -25,10 +25,10 @@ body {
     height: 100%;
     background-color:  #ffd700;
     position: absolute;
-    float: right;
     margin:auto;
     top: 0%;
     right:98.6%;
+    display: inline-block;
 
 
 
@@ -40,7 +40,7 @@ body {
     width: 120%;
     float: right;
     margin:auto;
-    top: 25%;
+    top: 20%;
     
 }
 .Encabezado{
@@ -48,12 +48,11 @@ body {
     height: 50%;
     width: 11%;
     background-color: rgb(255, 255, 255);
-    margin: 5px;
+    margin: 1%;
     float: right;
     position: absolute;
-    top: 0%;
     left: 50%;  
-    top: 3%;
+    top: 1%;
     right: 50%;  
    
 } 
@@ -67,7 +66,7 @@ background-color: rgb(255, 255, 255);
 margin: 0px;
 float: right;
 position: absolute;
-top: 1%;
+top: 9%;
 right: 50%;  
 border-top-left-radius: 10mm;
 border-bottom-left-radius: 10mm;
@@ -188,7 +187,7 @@ border-bottom-right-radius: 10mm;
     font-size: 12px;
     color: rgb(82, 195, 12);
     position: absolute;
-    float: left;
+    float: none;
     top: 13%;
     left: 28px;  
     height: 2.5%;
@@ -218,9 +217,11 @@ border-bottom-right-radius: 10mm;
     height: 5%;
     width: 100%;
     margin: 0px;
-    float: left;
+    float: none;
     position: absolute;
-    top: 98%;
+    top: 100%;
+    clear: both;
+    bottom: 0;
 }
 
 
@@ -382,13 +383,13 @@ h6{
    
     background-color: #ffffff;
     font-family: sans-serif;
-    font-size: 30px;
     position: absolute;
-    float:right;
+    float:none;
     left: 27%;
     top: 12%;
     height: 15.9%;
     width: 32%;
+    display:flexbox;
 
   }
 
@@ -399,11 +400,11 @@ h6{
    
     /*Estructura para definir columnas como se visualizara en plantilla html*/
       grid-template:
-      "header"  100px /*Encabezado*/
+      "header"  15% /*Encabezado*/
       "navbar"  100px   /*Menu*/
-      "main"    1700px  /*Cuerpo*/
-      "sidebar" 100px /*Barra Lateral*/
-      "footer"  100px; /*Pie*/
+      "main"    100%  /*Cuerpo*/
+      "sidebar" 100% /*Barra Lateral*/
+      "footer"  100%; /*Pie*/
   }
   
   @media (min-width: 1700px) {
