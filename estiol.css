@@ -294,7 +294,6 @@ html {
     float:right;
     left: 30%;
     top: 12%;
-  
     height: 15.9%;
     width: 32%;
   
@@ -302,7 +301,7 @@ html {
   }
 .Contenedor {
     display: grid;
-    gap: 50px;
+    gap: 1200px;
    
     /*Estructura para definir columnas como se visualizara en plantilla html*/
       grid-template:
@@ -322,12 +321,16 @@ html {
     left: 1%;}
   }
   
-@media(min-width: 300px) {
+@media(min-width: 400px) {
     .Cuerpo{
     float:right;
     top: 25%;
     left: 8%;}
-  }
+}
+h5{
+  font-size: 1px;
+}
+  
   
   @media (min-width: 200px) {
     .Cuerpo{
@@ -359,7 +362,7 @@ html {
       }
     }
     
-    @media (min-width: 600px) {
+    @media (min-width: 700px) {
         .Contenedor {
             display: grid;
         gap: 5.0%;    
@@ -370,9 +373,10 @@ html {
             top: 60%;
           }
           h5{
-            font-size: 20px;
+            font-size: 15px;
 
           }
+         
         }
 
     @media (min-width: 400px) {
@@ -386,6 +390,41 @@ html {
             top: 47%;
           }
           h5{
-            font-size: 16px;
+            font-size: 12px;
           }
         }
+
+
+    @media (min-width: 300px) {
+        .Contenedor {
+            display: grid;
+        gap: 100%;    
+          }
+          .Cuerpo {
+            left: 40%;
+            float:right;
+            top: 47%;
+            width: 30%;
+          }
+          h5{
+            font-size: 15px;
+          }
+          
+        }
+
+        @media (min-width: 200px) {
+            .Contenedor {
+                display: grid;
+            gap: 100%;    
+              }
+              .Cuerpo {
+                left: 40%;
+                float:right;
+                top: 47%;
+                width: 30%;
+              }
+              h5{
+                font-size: 7px;
+              }
+              
+            }
