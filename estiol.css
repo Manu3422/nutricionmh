@@ -12,11 +12,9 @@ body {
     position: relative;
     padding-bottom:2em;
     min-height: 100vh;
-
+    padding-bottom: 1em;
+    min-height: 100vh;
 }
-
-
-
 
 .linea {
     margin: 0%;
@@ -24,50 +22,44 @@ body {
     width: 5%;
     height: 100%;
     background-color:  #ffd700;
-    position: absolute;
-    margin:auto;
+    position: fixed;
     top: 0%;
     right:98.6%;
-    display: inline-block;
-
-
-
+ 
    
 }
 .img-log{
     grid-area: header;
-    height: 180%;
-    width: 120%;
+    height: 100%;
+    width: 100%;
     float: right;
     margin:auto;
-    top: 20%;
+    
     
 }
 .Encabezado{
-    grid-area: header;
-    height: 50%;
-    width: 11%;
-    background-color: rgb(255, 255, 255);
-    margin: 1%;
-    float: right;
+
+    height: 10%;
+    width: 100px;
+    background-color: rgb(223, 42, 42);
     position: absolute;
     left: 50%;  
-    top: 1%;
     right: 50%;  
+   
    
 } 
 
 
 .botones { 
 grid-area: header;
-height: 20%;
-width: 48%;
+height: 6%;
+width: 35%;
 background-color: rgb(255, 255, 255);
 margin: 0px;
 float: right;
 position: absolute;
-top: 9%;
-right: 50%;  
+top: 3%;
+right: 63%;  
 border-top-left-radius: 10mm;
 border-bottom-left-radius: 10mm;
 border-top-right-radius: 10mm;
@@ -97,7 +89,7 @@ border-bottom-right-radius: 10mm;
             margin: 2.5mm;
             padding: 1mm;
             position: relative;
-            left: 26%;
+            left: 49%;
             }
             .btn3 {
                 background-color:  #ff3300c6;
@@ -109,7 +101,7 @@ border-bottom-right-radius: 10mm;
                 margin: 2.5mm;
                 padding: 1mm;
                 position: relative;
-                left: 62%;
+                left: 120%;
                 }
                 .btn4 {   
                 background-color:  #ff3300c6;
@@ -121,7 +113,7 @@ border-bottom-right-radius: 10mm;
                 margin: 2.5mm;
                 padding: 1mm;
                 position: relative;
-                left: 100%;
+                left: 200%;
                     }
     
 
@@ -141,29 +133,26 @@ border-bottom-right-radius: 10mm;
     }
     
     #foto1{
-        height: 70%;
+        height: 65%;
         width: 29%;
-        background-color: lawngreen;
         margin: 10px;
         float: right;
         border-top-left-radius: 30mm;
         border-bottom-left-radius: 30mm;
         position: absolute;
-        top: 15%;
+        top: 13%;
         left: 70%;  
 }
 
 #foto2{
-    height: 50%;
+    height: 40%;
     width: 33%;
     background-color: rgb(255, 255, 255);
-    margin: 10px;
-    float: left;
     border-top-right-radius: 20mm;
     border-bottom-right-radius:20mm ;
     position: absolute;
-    top: 49%;
-    left: .4%;  
+    top: 55%;
+    left: 1.4%;  
 }
 
 .img-plato{   
@@ -177,54 +166,43 @@ border-bottom-right-radius: 10mm;
     display: inline-block;
 }
 
-    @media (max-width: 1000px) {
+    @media (max-width: 800px) {
       #foto2 {
-          display: ;
+        height: 40%;
+        width: 50%;
+       
         }
         #foto1 {
-          display: block;
-          top: 55%;
-          height: 45%;
-          width: 270px;
+          height: 40%;
+          width: 50%;
+          top: 53.8%;
+          left: 53%;
+        
+        
          
-
-        }
-        body {
-          height: 100%;
-          padding-bottom:0em;
-          min-height: 100vh;
         }
 
  }
-
-
-
-
-
-
 .texto1{
     font-family: sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     color: rgb(82, 195, 12);
     position: absolute;
     float: none;
-    top: 13%;
-    left: 28px;  
-    height: 2.5%;
-    width: 33%;
-    background-color: #a53838;
- 
-        
-    }
-    
+    top: 86px;
+    left: 49px;  
+    height: 31%;
+    width: 30%;
+    background-color: #ffffff;
 
+    }
     
     @media (max-width: 900px){
     h4 {
     font-size: 60px;
     }
     h5 {
-      font-size: 110px;
+      font-size: 100px;
     }
   }
     h5{
@@ -238,21 +216,18 @@ border-bottom-right-radius: 10mm;
 .pie{
    
     background-color:  rgba(255, 248, 122, 0.953);
-    height: 5%;
+    height: 1%;
     width: 100%;
-    margin: 0px;
-    float: none;
-    position: absolute;
-    top: 100%;
+    position: fixed;
     clear: both;
-    bottom: 0;
+    padding: 1em 0;
+    bottom: 0px;
+    transition: all .4s ease
 }
 
-
-
-
 html {
-    height: 100%;
+    min-height: 100%;
+    position: relative;
 }
 
 #wa{
@@ -401,11 +376,9 @@ h6{
   font-family:Arial, Helvetica, sans-serif
 
 }
-
-
 .Cuerpo {
    
-    background-color: #aa2222;
+    background-color: #ffffff;
     font-family: sans-serif;
     position: absolute;
     float:none;
@@ -416,57 +389,39 @@ h6{
     display:flexbox;
 
   }
-
-
-.Contenedor {
-    display: grid;
-  
-      grid-template:
-      "header"  100px 
-      
-  }
-
-
-        @media (min-width: 1000px) {
-            .Contenedor {
-                display: grid;
-      
-           
-              }
+        @media (min-width: 700px),(min-width:557px){
+        
               .Cuerpo {
-                left: 39%;
+                left: 37%;
                 top: 300px;
-                width: 31%;
-                display: inline-block;
+                width: 32%;
                 position: relative;
 
               }
               h5{
-                font-size: 23px;
+                font-size: 14px;
+                color: rgb(72, 138, 225);
                 
               }
               h4 {
-                font-size: 32px;
+                font-size: 23px;
             
               }
             }
             
-            @media (max-width: 999px) {
-              .Contenedor {
-                  display: grid;
-        
-             
-                }
+            @media (max-width: 699px) {
+              
                 .Cuerpo {
                   left: 28px;
                   top: 340px;
-                  width: 55%;
+                  width: 100%;
+                  height: 8%;
                   display: inline-block;
                   position: absolute;
   
                 }
                 h5{
-                  font-size: 16px;
+                  font-size: 15px;
                   
                 }
                 h4 {
@@ -475,7 +430,8 @@ h6{
                 .texto1 {
                   top: 130px;
                   left: 28px;  
-                  width: 55%;
+                  width: 100%;
+                  height: 5%;
                   position: absolute;
           
 
@@ -483,36 +439,35 @@ h6{
               }
 
                 
-                @media (max-width: 850px) {
-                  .Contenedor {
-                      display: grid;
-            
+                @media (max-width: 800px) {
                  
-                    }
                     .Cuerpo {
-                      left: 28px;
-                      top: 340px;
-                      width: 55%;
+                      left: 24px;
+                      top: 260px;
+                      width: 100%;
                       display: inline-block;
                       position: absolute;
+                      height: 7%;
       
                     }
                     h5{
-                      font-size: 15px;
+                      font-size: 13px;
+                      color: rgb(72, 138, 225);
                       
                     }
                     h4 {
-                      font-size: 20px;
+                      font-size: 23px;
                     }
                     .texto1 {
-                      top: 130px;
-                      left: 28px;  
-                      width: 55%;
+                      top: 90px;
+                      left: 24px;  
+                      width: 100%;
                       position: absolute;
+                      height: 10%;
               
     
                     }
                   }
        
 
-           
+                
