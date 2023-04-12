@@ -10,7 +10,7 @@ body {
     background-color: rgba(255, 255, 255, 0.864);
     height: 100%;
     position: relative;
-    padding-bottom: 6em;
+    padding-bottom:2em;
     min-height: 100vh;
 
 }
@@ -169,12 +169,32 @@ border-bottom-right-radius: 10mm;
 .img-plato{   
     height: 100%;
     width: 100%;
-    float: left;
     margin:auto;
     top: 25%;
     left: 25%;
     border-top-right-radius: 20mm;
     border-bottom-right-radius:20mm ;
+    display: inline-block;
+}
+
+    @media (max-width: 1000px) {
+      #foto2 {
+          display: ;
+        }
+        #foto1 {
+          display: block;
+          top: 55%;
+          height: 45%;
+          width: 270px;
+         
+
+        }
+        body {
+          height: 100%;
+          padding-bottom:0em;
+          min-height: 100vh;
+        }
+
  }
 
 
@@ -192,17 +212,25 @@ border-bottom-right-radius: 10mm;
     left: 28px;  
     height: 2.5%;
     width: 33%;
-    background-color: #ffffff;
+    background-color: #a53838;
  
         
     }
     
 
-    h4{
-    font-size: 2vw;
+    
+    @media (max-width: 900px){
+    h4 {
+    font-size: 60px;
     }
-
+    h5 {
+      font-size: 110px;
+    }
+  }
     h5{
+        font-size: 2vw;
+        @media screen and {max-width: 500px}
+        font-size: 10px;
         color: rgb(22, 22, 190); 
         text-align:justify  
         }
@@ -377,7 +405,7 @@ h6{
 
 .Cuerpo {
    
-    background-color: #ffffff;
+    background-color: #aa2222;
     font-family: sans-serif;
     position: absolute;
     float:none;
@@ -392,91 +420,99 @@ h6{
 
 .Contenedor {
     display: grid;
-    gap: 1700px;
-   
-    /*Estructura para definir columnas como se visualizara en plantilla html*/
-      grid-template:
-      "header"  15% /*Encabezado*/
-      "navbar"  100px   /*Menu*/
-      "main"    100%  /*Cuerpo*/
-      "sidebar" 100% /*Barra Lateral*/
-      "footer"  100%; /*Pie*/
-  }
   
-  @media (min-width: 1700px) {
-    .Contenedor {
-        display: grid;
-    gap: 8%;
-}
-.Cuerpo {
-  left: 39%;
-  float:right;
-  top: 60%;
-}
-h5{
-  font-size: 19px;
+      grid-template:
+      "header"  100px 
+      
+  }
 
-}
 
-}
-    
-    @media (min-width: 800px) {
-        .Contenedor {
-            display: grid;
-        gap: 5.0%;    
-          }
-          .Cuerpo {
-            left: 39%;
-            float:right;
-            top: 57%;
-          }
-          h5{
-            font-size: 17px;
-
-          }
-        
-        }
-
-    @media (min-width: 400px) {
-        .Contenedor {
-            display: grid;
-        gap: 100%;    
-          }
-          .Cuerpo {
-            left: 37%;
-            float:right;
-            top: 47%;
-          }
-          h5{
-            font-size: 15px;
-          }
-        }
-        @media (min-width: 300px) {
+        @media (min-width: 1000px) {
             .Contenedor {
                 display: grid;
-            gap: 100%;    
+      
+           
               }
               .Cuerpo {
                 left: 39%;
-                float:right;
-                top: 47%;
+                top: 300px;
                 width: 31%;
+                display: inline-block;
+                position: relative;
 
               }
               h5{
-                font-size: 1.7vw;
+                font-size: 23px;
                 
               }
               h4 {
-                font-size: 1.9vw;
+                font-size: 32px;
             
               }
             }
+            
+            @media (max-width: 999px) {
+              .Contenedor {
+                  display: grid;
+        
+             
+                }
+                .Cuerpo {
+                  left: 28px;
+                  top: 340px;
+                  width: 55%;
+                  display: inline-block;
+                  position: absolute;
+  
+                }
+                h5{
+                  font-size: 16px;
+                  
+                }
+                h4 {
+                  font-size: 22px;
+                }
+                .texto1 {
+                  top: 130px;
+                  left: 28px;  
+                  width: 55%;
+                  position: absolute;
+          
+
+                }
+              }
+
+                
+                @media (max-width: 850px) {
+                  .Contenedor {
+                      display: grid;
+            
+                 
+                    }
+                    .Cuerpo {
+                      left: 28px;
+                      top: 340px;
+                      width: 55%;
+                      display: inline-block;
+                      position: absolute;
+      
+                    }
+                    h5{
+                      font-size: 15px;
+                      
+                    }
+                    h4 {
+                      font-size: 20px;
+                    }
+                    .texto1 {
+                      top: 130px;
+                      left: 28px;  
+                      width: 55%;
+                      position: absolute;
+              
     
-
-
-
-
+                    }
+                  }
        
 
            
