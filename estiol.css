@@ -3,6 +3,7 @@
     padding: 0px;
     border-width: 0;
     background-color: rgba(255, 255, 255, 0.864);
+    
 }
 
 body {
@@ -13,6 +14,8 @@ body {
     padding-bottom:2em;
     padding-bottom: 1em;
     min-height: 100vh;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
     
 }
 
@@ -212,6 +215,7 @@ left: 200px
     height: 31%;
     width: 30%;
     background-color: #ffffff;
+    
 
     }
     
@@ -466,8 +470,21 @@ h6{
                       display: inline-block;
                       position: absolute;
                       height: 7%;
-      
                     }
+                      .scrol{
+                        display: block;
+                        width: 15%;
+                        padding: 40%;
+                        height: 20px;
+                        overflow-y: scroll;
+                        scroll-behavior: smooth;
+                        background-color: #ffffff;
+                
+                       }
+                
+                            
+      
+                    
                     h5{
                       font-size: 14px;
                       color: rgb(72, 138, 225);
@@ -482,8 +499,9 @@ h6{
                       width: 100%;
                       position: absolute;
                       height: 10%;
-              
-    
+                  
+                     
+            
                     }
                   }
        
@@ -616,8 +634,6 @@ h6{
                       }
    
                     }}
-      
-       
-
-                
+  
+     
             
