@@ -572,9 +572,9 @@ h6{
                   @media (max-width: 400px) {
                  
                     .Cuerpo {
-                      left: 24px;
+                      left: 14px;
                       top: 260px;
-                      width: 100%;
+                      width: 90%;
                       position: absolute;
                       height: 7%;
                       display: inline;
@@ -591,8 +591,8 @@ h6{
                     }
                     .texto1 {
                       top: 90px;
-                      left: 24px;  
-                      width: 100%;
+                      left: 14px;  
+                      width: 90%;
                       position: absolute;
                       height: 10%;
                       display: inline;
@@ -608,7 +608,7 @@ h6{
                         height: 30%;
                         width: 50%;
                         top: 60%;
-                        left: 25%;
+                        left: 21%;
                         display: inline;
                         float:right;
                         position: fixed;
