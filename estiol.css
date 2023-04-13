@@ -11,9 +11,9 @@ body {
     height: 100%;
     position: relative;
     padding-bottom:2em;
-    min-height: 100vh;
     padding-bottom: 1em;
     min-height: 100vh;
+    
 }
 
 .linea {
@@ -50,27 +50,44 @@ body {
 } 
 
 
-.botones { 
-grid-area: header;
-height: 6%;
-width: 35%;
-background-color: rgb(255, 255, 255);
+#sidebar { 
+height: 0%;
+width: 31%;
+background-color: rgb(253, 253, 253);
 margin: 0px;
-float: right;
-position: absolute;
-top: 3%;
-right: 63%;  
+top: 1%;
 border-top-left-radius: 10mm;
 border-bottom-left-radius: 10mm;
 border-top-right-radius: 10mm;
 border-bottom-right-radius: 10mm;
+position: absolute ;
+left: -186px;
+transition : all 700ms;
+
+}
+
+
+  .sticky-top{
+    color: rgba(255, 11, 11, 0.912);
+    position: fixed;
+    font-size: 40px;
+    right:30px;
+
+
+  }
+ 
+  
+  
+
+#sidebar.active{
+left: 200px
+
 
 }
     .btn1 {
-        margin-right: 8px;
-        margin-left: 8px;
+        margin-right: 0px;
+        margin-left: px;
         background-color: #ff3300c6;
-        background-size: 1000px;
         color: rgb(26, 87, 230);
         font-family: sans-serif;
         font-weight: bold;
@@ -78,6 +95,7 @@ border-bottom-right-radius: 10mm;
         border-radius: 10mm;
         margin: 2.5mm;
         padding: 1mm;
+  
         }
         .btn2 {
             background-color:  #ff3300c6;
@@ -101,7 +119,7 @@ border-bottom-right-radius: 10mm;
                 margin: 2.5mm;
                 padding: 1mm;
                 position: relative;
-                left: 120%;
+                left: 124%;
                 }
                 .btn4 {   
                 background-color:  #ff3300c6;
@@ -222,7 +240,7 @@ border-bottom-right-radius: 10mm;
     clear: both;
     padding: 1em 0;
     bottom: 0px;
-    transition: all .4s ease
+  
 }
 
 html {
@@ -595,9 +613,9 @@ h6{
        border-top-right-radius: 21mm;
        border-bottom-right-radius: 19mm;
       
-     
+                      }
    
-     
+                    }}
       
        
 
